@@ -8,5 +8,5 @@ export async function GET(request: NextRequest) {
     headers.get('x-vercel-forwarded-for')?.split(',')[0].trim() ||
     '0.0.0.0';
 
-  return NextResponse.json({ ip });
+  return NextResponse.json(ip);
 }
